@@ -30,8 +30,6 @@
 
   /* ---------- 2 · o pato que reage ao rolar ---------- */
   var duckHolder = document.querySelector("[data-scroll-duck]");
-  var companion = document.querySelector("[data-companion]");
-  var hero = document.querySelector(".hero");
   var ticking = false;
 
   function clamp(n, min, max) { return n < min ? min : n > max ? max : n; }
@@ -39,20 +37,12 @@
   function onScroll() {
     var vh = window.innerHeight;
 
+    // o pato sobe/desce suavemente conforme a seção atravessa a tela.
+    // só translação — a imagem nunca é distorcida nem girada.
     if (duckHolder && !reduce) {
       var r = duckHolder.getBoundingClientRect();
-      // 0 quando entra por baixo, 1 quando sai por cima
-      var p = clamp((vh - r.top) / (vh + r.height), 0, 1);
-      var tilt = (p - 0.5) * 2; // -1 .. 1
-      duckHolder.style.transform =
-        "translateY(" + tilt * 16 + "px) rotate(" + tilt * 4 + "deg)";
-    }
-
-    if (companion) {
-      var heroH = hero ? hero.offsetHeight : vh;
-      var nearBottom = window.scrollY + vh > document.body.scrollHeight - 260;
-      var show = window.scrollY > heroH * 0.72 && !nearBottom;
-      companion.classList.toggle("is-shown", show);
+      var p = clamp((vh - r.top) / (vh + r.height), 0, 1); // 0 entra por baixo · 1 sai por cima
+      duckHolder.style.transform = "translateY(" + (p - 0.5) * 26 + "px)";
     }
 
     ticking = false;
