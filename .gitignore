@@ -1,0 +1,11 @@
+# ferramentas de build (não fazem parte do site publicado)
+build/
+.identity/
+node_modules/
+
+# fotos originais em alta (fonte p/ reprocessar; o site usa assets/img)
+source/
+
+# sistema
+.DS_Store
+Thumbs.db

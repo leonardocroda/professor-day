@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Pato da Yogue-se em posição de meditação">
+  <g id="duck">
+    <!-- silhueta -->
+    <path id="body"
+      d="M120 40 C138 40 152 54 152 74 C152 84 148 90 156 98 C178 112 184 134 184 152
+         C184 182 156 202 120 202 C84 202 56 182 56 152 C56 134 62 112 84 98
+         C92 90 88 84 88 74 C88 54 102 40 120 40 Z"
+      fill="#ffffff" stroke="#17130f" stroke-width="4" stroke-linejoin="round"/>
+    <!-- braços -->
+    <g id="arms" stroke="#17130f" stroke-width="4" fill="none" stroke-linecap="round">
+      <path class="arm arm-l" d="M70 140 C46 134 32 140 24 154"/>
+      <path class="arm arm-r" d="M170 140 C194 134 208 140 216 154"/>
+    </g>
+    <!-- mãos (mudra) -->
+    <g id="hands" stroke="#17130f" stroke-width="3.4" fill="none" stroke-linecap="round">
+      <g class="hand hand-l">
+        <path d="M24 154 l-7 -9"/>
+        <path d="M24 154 l-12 -3"/>
+        <path d="M24 154 l-8 8"/>
+      </g>
+      <g class="hand hand-r">
+        <path d="M216 154 l7 -9"/>
+        <path d="M216 154 l12 -3"/>
+        <path d="M216 154 l8 8"/>
+      </g>
+    </g>
+    <!-- pernas cruzadas -->
+    <path id="legs" d="M76 174 C96 154 144 154 164 174 C150 190 90 190 76 174 Z"
+      fill="#ffffff" stroke="#17130f" stroke-width="4" stroke-linejoin="round"/>
+    <!-- pés -->
+    <g id="feet" fill="#efa96a" stroke="#17130f" stroke-width="3.4" stroke-linejoin="round">
+      <ellipse cx="104" cy="184" rx="15" ry="8" transform="rotate(-14 104 184)"/>
+      <ellipse cx="136" cy="184" rx="15" ry="8" transform="rotate(14 136 184)"/>
+    </g>
+    <!-- bico -->
+    <path id="beak" d="M120 82 C127 82 133 86 133 92 C133 98 127 104 120 105
+                       C113 104 107 98 107 92 C107 86 113 82 120 82 Z"
+      fill="#efa96a" stroke="#17130f" stroke-width="3.4" stroke-linejoin="round"/>
+    <!-- olhos fechados -->
+    <g id="eyes" stroke="#17130f" stroke-width="3.6" fill="none" stroke-linecap="round">
+      <path class="eye eye-l" d="M97 66 Q105 73 113 66"/>
+      <path class="eye eye-r" d="M127 66 Q135 73 143 66"/>
+    </g>
+  </g>
+</svg>
